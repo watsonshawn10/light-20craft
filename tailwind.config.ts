@@ -57,6 +57,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Christmas-themed brand colors
+        christmas: {
+          red: "hsl(var(--christmas-red))",
+          "red-foreground": "hsl(var(--christmas-red-foreground))",
+          green: "hsl(var(--christmas-green))",
+          "green-foreground": "hsl(var(--christmas-green-foreground))",
+          gold: "hsl(var(--christmas-gold))",
+          "gold-foreground": "hsl(var(--christmas-gold-foreground))",
+          snow: "hsl(var(--christmas-snow))",
+          "snow-foreground": "hsl(var(--christmas-snow-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

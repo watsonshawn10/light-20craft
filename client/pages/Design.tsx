@@ -21,7 +21,7 @@ import {
   Zap,
   Home,
   TreePine,
-  Wreath,
+  CircleDot,
   Star,
   Palette,
   Download,
@@ -243,7 +243,7 @@ export default function Design() {
                           </div>
                           <div className="text-center">
                             <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                              ��
+                              ✓
                             </div>
                             Front view
                           </div>

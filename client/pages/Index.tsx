@@ -17,7 +17,7 @@ import {
   CheckCircle,
   TreePine,
   Home,
-  Wreath,
+  CircleDot,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -180,7 +180,7 @@ export default function Index() {
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
             <CardHeader>
               <div className="w-12 h-12 bg-christmas-green/10 rounded-lg flex items-center justify-center mb-4">
-                <Wreath className="h-6 w-6 text-christmas-green" />
+                <CircleDot className="h-6 w-6 text-christmas-green" />
               </div>
               <CardTitle>Wreaths & Garland</CardTitle>
               <CardDescription>

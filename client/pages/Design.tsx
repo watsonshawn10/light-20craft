@@ -621,25 +621,24 @@ export default function Design() {
                 <CardContent>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span>
-                        Roofline + {analysisResults?.trees || 3} trees:
-                      </span>
+                      <span>Front roofline + porch:</span>
                       <span className="font-medium">
-                        {analysisResults?.rooflineLength || 350} ft + trees
+                        {analysisResults?.rooflineLength || 180}ft +{" "}
+                        {analysisResults?.porchLength || 20}ft
                       </span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Wreaths:</span>
+                      <span>Wreaths & garland:</span>
                       <span className="font-medium">
-                        {analysisResults?.windows || 6} included
+                        {analysisResults?.windows || 5} wreaths + porch garland
                       </span>
                     </div>
                     <div className="flex justify-between">
                       <span>Install time:</span>
                       <span className="font-medium">
                         {analysisResults
-                          ? analysisResults.estimatedTime + 2
-                          : 6}{" "}
+                          ? analysisResults.estimatedTime + 1
+                          : 4}{" "}
                         hours
                       </span>
                     </div>
@@ -649,11 +648,12 @@ export default function Design() {
                         $
                         {analysisResults
                           ? Math.floor(
-                              analysisResults.rooflineLength * 1.5 +
-                                analysisResults.trees * 85 +
-                                200,
+                              analysisResults.rooflineLength * 2.2 +
+                                analysisResults.porchLength * 3 +
+                                analysisResults.windows * 45 +
+                                150,
                             )
-                          : 785}
+                          : 685}
                       </span>
                     </div>
                   </div>

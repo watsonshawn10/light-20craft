@@ -246,9 +246,9 @@ export default function Index() {
               </div>
               <h3 className="text-xl font-semibold mb-4">Design & Preview</h3>
               <p className="text-muted-foreground">
-                Choose from our curated designs or customize your own. See
-                realistic 3D previews of how your home will look with lights,
-                wreaths, and decorations.
+                Choose from curated designs or customize options. Generate
+                realistic 3D previews showing customers how their home will look
+                with lights, wreaths, and decorations.
               </p>
             </div>
 

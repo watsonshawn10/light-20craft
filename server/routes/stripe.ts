@@ -19,8 +19,8 @@ export const createSubscription: RequestHandler = async (req, res) => {
       expand: ["latest_invoice.payment_intent"],
     });
 
-    const invoice = subscription.latest_invoice as Stripe.Invoice;
-    const paymentIntent = invoice?.payment_intent as Stripe.PaymentIntent;
+    const invoice = subscription.latest_invoice as any;
+    const paymentIntent = invoice?.payment_intent;
 
     res.json({
       subscriptionId: subscription.id,

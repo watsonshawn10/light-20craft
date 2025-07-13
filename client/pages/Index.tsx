@@ -120,11 +120,12 @@ export default function Index() {
             Features
           </Badge>
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-            Everything You Need for Perfect Holiday Lighting
+            Everything You Need to Win More Christmas Lighting Jobs
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From AI-powered design to professional installation, we handle every
-            detail of your holiday lighting transformation.
+            From AI-powered measurement to professional client presentations, we
+            provide all the tools your Christmas lighting business needs to
+            grow.
           </p>
         </div>
 

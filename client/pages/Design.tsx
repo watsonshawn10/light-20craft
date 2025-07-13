@@ -286,13 +286,13 @@ export default function Design() {
                         </div>
                         <div>
                           <h3 className="text-xl font-semibold mb-2">
-                            Upload a Photo of Your Home
+                            Upload a Front View Photo
                           </h3>
                           <p className="text-muted-foreground mb-6">
-                            For best results, take a photo from the street
-                            showing the front of your house clearly. Include the
-                            roofline and any trees or landscaping you'd like to
-                            light up.
+                            Take a photo from the street showing only the front
+                            facade of the house. Focus on the front roofline,
+                            windows, doors, and porch area that will be
+                            decorated with Christmas lights.
                           </p>
                           <Label
                             htmlFor="photo-upload"

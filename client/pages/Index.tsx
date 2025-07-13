@@ -222,7 +222,7 @@ export default function Index() {
             How It Works
           </Badge>
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-            From Photo to Perfect in 3 Simple Steps
+            From Customer Photo to Professional Quote in 3 Simple Steps
           </h2>
         </div>
 

@@ -413,7 +413,7 @@ export default function Design() {
                     <span>AI Analysis Results</span>
                   </CardTitle>
                   <CardDescription>
-                    Here's what our AI detected about your property
+                    Here's what our AI detected about your front facade
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -423,7 +423,7 @@ export default function Design() {
                         {analysisResults.rooflineLength}ft
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        Roofline Length
+                        Front Roofline
                       </p>
                     </div>
                     <div className="text-center">
@@ -431,15 +431,15 @@ export default function Design() {
                         {analysisResults.windows}
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        Windows Detected
+                        Front Windows
                       </p>
                     </div>
                     <div className="text-center">
                       <div className="text-2xl font-bold text-christmas-gold">
-                        {analysisResults.trees}
+                        {analysisResults.porchLength}ft
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        Trees/Bushes
+                        Porch/Entry
                       </p>
                     </div>
                     <div className="text-center">

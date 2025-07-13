@@ -137,9 +137,9 @@ export default function Index() {
               </div>
               <CardTitle>Smart Photo Analysis</CardTitle>
               <CardDescription>
-                Upload a photo of your home and our AI accurately measures
-                rooflines, windows, and architectural features for perfect light
-                placement.
+                Upload customer photos and our AI accurately measures rooflines,
+                windows, and architectural features for instant professional
+                quotes.
               </CardDescription>
             </CardHeader>
           </Card>

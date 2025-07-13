@@ -100,15 +100,15 @@ export default function Index() {
         <div className="mt-12 flex items-center justify-center space-x-8 text-sm text-muted-foreground">
           <div className="flex items-center space-x-2">
             <CheckCircle className="h-4 w-4 text-christmas-green" />
-            <span>Free Design Preview</span>
+            <span>Instant Quote Generation</span>
           </div>
           <div className="flex items-center space-x-2">
             <CheckCircle className="h-4 w-4 text-christmas-green" />
-            <span>Professional Installation</span>
+            <span>Professional Presentations</span>
           </div>
           <div className="flex items-center space-x-2">
             <CheckCircle className="h-4 w-4 text-christmas-green" />
-            <span>Take Down Service</span>
+            <span>Win More Business</span>
           </div>
         </div>
       </section>

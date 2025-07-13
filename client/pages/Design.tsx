@@ -660,12 +660,14 @@ export default function Design() {
                         $
                         {analysisResults
                           ? Math.floor(
-                              analysisResults.rooflineLength * 2.2 +
-                                analysisResults.porchLength * 3 +
+                              (analysisResults.rooflineLength +
+                                analysisResults.porchLength) *
+                                analysisResults.pricePerFoot *
+                                1.5 +
                                 analysisResults.windows * 45 +
-                                150,
+                                100,
                             )
-                          : 685}
+                          : 1150}
                       </span>
                     </div>
                   </div>

@@ -97,21 +97,24 @@ export default function Design() {
         clearInterval(interval);
         setIsAnalyzing(false);
 
-        // Generate realistic analysis results
+        // Generate realistic analysis results focused on front facade
         const results = {
-          rooflineLength: Math.floor(Math.random() * 200) + 250, // 250-450 ft
-          windows: Math.floor(Math.random() * 8) + 4, // 4-12 windows
-          doors: Math.floor(Math.random() * 3) + 1, // 1-4 doors
-          trees: Math.floor(Math.random() * 5) + 2, // 2-7 trees
+          rooflineLength: Math.floor(Math.random() * 100) + 120, // 120-220 ft (front only)
+          windows: Math.floor(Math.random() * 5) + 3, // 3-8 front windows
+          doors: 1, // Front door only
+          garageDoors: Math.floor(Math.random() * 3), // 0-2 garage doors
+          porchLength: Math.floor(Math.random() * 30) + 10, // 10-40 ft porch
+          entryFeatures: Math.floor(Math.random() * 3) + 1, // 1-3 entry features
           difficulty: ["Easy", "Moderate", "Complex"][
             Math.floor(Math.random() * 3)
           ],
-          estimatedTime: Math.floor(Math.random() * 4) + 3, // 3-7 hours
+          estimatedTime: Math.floor(Math.random() * 3) + 2, // 2-5 hours (front only)
           recommendations: [
-            "Warm white LED lights for classic elegance",
-            "Focus on roofline and entryway",
-            "Add wreaths to front-facing windows",
-            "Consider pathway lighting for safety",
+            "Outline front roofline with warm white LEDs",
+            "Frame all front-facing windows with lights",
+            "Add wreath to front door and garage doors",
+            "Accent front porch columns and railings",
+            "Consider mini lights on front landscaping",
           ],
         };
 

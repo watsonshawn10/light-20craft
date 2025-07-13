@@ -426,50 +426,50 @@ export default function Index() {
           </Card>
         </div>
 
-        {/* Additional Pricing Info */}
-        <div className="mt-16 text-center max-w-3xl mx-auto">
-          <h3 className="text-xl font-semibold mb-6">What's Always Included</h3>
+        {/* Additional Business Info */}
+        <div className="mt-16 text-center max-w-4xl mx-auto">
+          <h3 className="text-xl font-semibold mb-6">
+            Powerful Tools for Your Business
+          </h3>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="w-12 h-12 bg-christmas-green/10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                <CheckCircle className="h-6 w-6 text-christmas-green" />
+                <Zap className="h-6 w-6 text-christmas-green" />
               </div>
-              <h4 className="font-medium mb-1">Free Design Preview</h4>
+              <h4 className="font-medium mb-1">Instant Measurements</h4>
               <p className="text-sm text-muted-foreground">
-                See before you buy
+                AI-powered roofline analysis
               </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-christmas-green/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Palette className="h-6 w-6 text-christmas-green" />
+              </div>
+              <h4 className="font-medium mb-1">Visual Proposals</h4>
+              <p className="text-sm text-muted-foreground">
+                3D mockups for clients
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-christmas-green/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Star className="h-6 w-6 text-christmas-green" />
+              </div>
+              <h4 className="font-medium mb-1">Professional Quotes</h4>
+              <p className="text-sm text-muted-foreground">Win more business</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-christmas-green/10 rounded-lg flex items-center justify-center mx-auto mb-3">
                 <CheckCircle className="h-6 w-6 text-christmas-green" />
               </div>
-              <h4 className="font-medium mb-1">Premium LED Lights</h4>
+              <h4 className="font-medium mb-1">Time Savings</h4>
               <p className="text-sm text-muted-foreground">
-                Commercial grade quality
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-christmas-green/10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                <CheckCircle className="h-6 w-6 text-christmas-green" />
-              </div>
-              <h4 className="font-medium mb-1">Take Down Service</h4>
-              <p className="text-sm text-muted-foreground">
-                We handle the cleanup
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-christmas-green/10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                <CheckCircle className="h-6 w-6 text-christmas-green" />
-              </div>
-              <h4 className="font-medium mb-1">Free Storage</h4>
-              <p className="text-sm text-muted-foreground">
-                Until next holiday season
+                5x faster than manual quotes
               </p>
             </div>
           </div>
           <p className="text-sm text-muted-foreground mt-8 italic">
-            All prices are estimates based on average home sizes. Final pricing
-            determined after free consultation and measurement.
+            Trusted by over 500+ Christmas lighting contractors nationwide.
+            Start with a 14-day free trial.
           </p>
         </div>
       </section>

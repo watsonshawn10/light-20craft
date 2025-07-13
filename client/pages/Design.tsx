@@ -321,19 +321,19 @@ export default function Design() {
                             <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
                               ✓
                             </div>
-                            Clear roofline
+                            Front roofline
                           </div>
                           <div className="text-center">
                             <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
                               ✓
                             </div>
-                            Good lighting
+                            Street view angle
                           </div>
                           <div className="text-center">
                             <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
                               ✓
                             </div>
-                            Front view
+                            Porch & windows
                           </div>
                         </div>
                       </div>

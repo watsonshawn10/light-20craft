@@ -234,9 +234,9 @@ export default function Index() {
               </div>
               <h3 className="text-xl font-semibold mb-4">Upload & Measure</h3>
               <p className="text-muted-foreground">
-                Upload a photo of your home or enter your address. Our AI
-                analyzes the image to create precise measurements of your
-                roofline and features.
+                Upload a customer's home photo or enter their address. Our AI
+                analyzes the property to create precise measurements of the
+                roofline and architectural features.
               </p>
             </div>
 

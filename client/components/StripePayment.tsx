@@ -19,7 +19,7 @@ import { CheckCircle, CreditCard } from "lucide-react";
 
 // Load Stripe (use your publishable key)
 const stripePromise = loadStripe(
-  process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY || "pk_test_51...", // Replace with your actual publishable key
+  import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY || "pk_test_51...", // Replace with your actual publishable key
 );
 
 interface PricingPlan {

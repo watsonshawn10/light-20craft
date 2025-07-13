@@ -256,13 +256,11 @@ export default function Index() {
               <div className="w-16 h-16 bg-christmas-gold rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-6">
                 3
               </div>
-              <h3 className="text-xl font-semibold mb-4">
-                Professional Install
-              </h3>
+              <h3 className="text-xl font-semibold mb-4">Generate Quote</h3>
               <p className="text-muted-foreground">
-                Our certified technicians handle everything from installation to
-                take-down. Sit back and enjoy your magical holiday
-                transformation.
+                Create professional quotes with accurate pricing, material
+                lists, and stunning visuals. Present to customers and win more
+                holiday lighting contracts.
               </p>
             </div>
           </div>

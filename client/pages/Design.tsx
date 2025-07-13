@@ -168,16 +168,26 @@ export default function Design() {
                 <CardContent>
                   <Progress value={analysisProgress} className="h-3" />
                   <p className="text-sm text-muted-foreground mt-2">
-                    {analysisProgress < 30 &&
+                    {analysisProgress < 15 && "Initializing AI analysis..."}
+                    {analysisProgress >= 15 &&
+                      analysisProgress < 30 &&
                       "Detecting rooflines and architectural features..."}
                     {analysisProgress >= 30 &&
+                      analysisProgress < 45 &&
+                      "Measuring roofline dimensions..."}
+                    {analysisProgress >= 45 &&
                       analysisProgress < 60 &&
-                      "Calculating measurements and angles..."}
+                      "Identifying window and door locations..."}
                     {analysisProgress >= 60 &&
+                      analysisProgress < 75 &&
+                      "Calculating optimal light placement zones..."}
+                    {analysisProgress >= 75 &&
                       analysisProgress < 90 &&
-                      "Identifying optimal light placement zones..."}
+                      "Analyzing landscape features..."}
                     {analysisProgress >= 90 &&
+                      analysisProgress < 100 &&
                       "Generating design recommendations..."}
+                    {analysisProgress >= 100 && "Analysis complete!"}
                   </p>
                 </CardContent>
               </Card>

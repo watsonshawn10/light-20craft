@@ -491,11 +491,11 @@ export default function Index() {
         <div className="text-center max-w-3xl mx-auto">
           <Sparkles className="h-16 w-16 mx-auto mb-6 opacity-90" />
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-            Ready to Transform Your Home?
+            Ready to Transform Your Business?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join thousands of homeowners who trust LightCraft for their holiday
-            lighting. Get your free design preview today.
+            Join hundreds of Christmas lighting contractors who use LightCraft
+            to create professional quotes and win more business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/design">

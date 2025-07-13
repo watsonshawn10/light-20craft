@@ -165,8 +165,8 @@ export default function Index() {
               </div>
               <CardTitle>3D Design Preview</CardTitle>
               <CardDescription>
-                See exactly how your home will look with realistic 3D mockups
-                featuring lights, wreaths, garland, and other holiday
+                Show customers exactly how their home will look with realistic
+                3D mockups featuring lights, wreaths, garland, and other holiday
                 decorations.
               </CardDescription>
             </CardHeader>

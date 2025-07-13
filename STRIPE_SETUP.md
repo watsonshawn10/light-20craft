@@ -87,10 +87,11 @@ VITE_STRIPE_PUBLISHABLE_KEY=pk_test_51xxxxx...
 
 ### 6. Update Frontend Config
 
-In `client/components/StripePayment.tsx`, update the Stripe publishable key:
+The Stripe publishable key is automatically loaded from your environment variables:
 
 ```typescript
-const stripePromise = loadStripe("pk_test_51xxxxx..."); // Your actual key
+// Uses VITE_STRIPE_PUBLISHABLE_KEY from your .env file
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
 ```
 
 ## 🧪 Testing

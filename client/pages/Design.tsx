@@ -702,6 +702,11 @@ export default function Design() {
                           : 1150}
                       </span>
                     </div>
+                    {analysisResults && (
+                      <div className="text-xs text-muted-foreground mt-2 text-center">
+                        Based on ${analysisResults.pricePerFoot}/ft local rate
+                      </div>
+                    )}
                   </div>
                   <Button
                     className="w-full mt-4 bg-christmas-green hover:bg-christmas-green/90"

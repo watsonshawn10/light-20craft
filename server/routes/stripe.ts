@@ -19,10 +19,12 @@ export const createSubscription: RequestHandler = async (req, res) => {
       expand: ["latest_invoice.payment_intent"],
     });
 
+    const invoice = subscription.latest_invoice as Stripe.Invoice;
+    const paymentIntent = invoice?.payment_intent as Stripe.PaymentIntent;
+
     res.json({
       subscriptionId: subscription.id,
-      clientSecret: (subscription.latest_invoice as Stripe.Invoice)
-        ?.payment_intent?.client_secret,
+      clientSecret: paymentIntent?.client_secret,
     });
   } catch (error) {
     console.error("Error creating subscription:", error);

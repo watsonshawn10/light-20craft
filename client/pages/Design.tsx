@@ -643,6 +643,20 @@ export default function Design() {
                       </span>
                     </div>
                   </div>
+                  <Button
+                    className="w-full mt-4 bg-christmas-green hover:bg-christmas-green/90"
+                    onClick={() => generateQuote("wonderland")}
+                    disabled={generatingQuote}
+                  >
+                    {generatingQuote && selectedDesign === "wonderland" ? (
+                      <>
+                        <div className="animate-spin h-4 w-4 mr-2 border-2 border-white border-t-transparent rounded-full" />
+                        Generating Quote...
+                      </>
+                    ) : (
+                      "Generate Quote"
+                    )}
+                  </Button>
                 </CardContent>
               </Card>
 

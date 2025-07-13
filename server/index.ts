@@ -16,6 +16,14 @@ export function createServer() {
 
   // Middleware
   app.use(cors());
+
+  // Webhook endpoint needs raw body
+  app.post(
+    "/api/stripe/webhook",
+    express.raw({ type: "application/json" }),
+    handleWebhook,
+  );
+
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
@@ -25,6 +33,17 @@ export function createServer() {
   });
 
   app.get("/api/demo", handleDemo);
+
+  // Stripe API routes
+  app.post("/api/stripe/create-customer", createCustomer);
+  app.post("/api/stripe/create-subscription", createSubscription);
+  app.post("/api/stripe/create-setup-intent", createSetupIntent);
+  app.get("/api/stripe/subscriptions/:customerId", getCustomerSubscriptions);
+  app.post(
+    "/api/stripe/cancel-subscription/:subscriptionId",
+    cancelSubscription,
+  );
+  app.get("/api/stripe/pricing-plans", getPricingPlans);
 
   return app;
 }

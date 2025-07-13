@@ -69,14 +69,23 @@ export default function Design() {
     const analysisSteps = [
       {
         progress: 15,
-        message: "Detecting rooflines and architectural features...",
+        message: "Detecting front roofline and facade...",
       },
-      { progress: 30, message: "Measuring roofline dimensions..." },
-      { progress: 45, message: "Identifying window and door locations..." },
-      { progress: 60, message: "Calculating optimal light placement zones..." },
-      { progress: 75, message: "Analyzing landscape features..." },
-      { progress: 90, message: "Generating design recommendations..." },
-      { progress: 100, message: "Analysis complete!" },
+      {
+        progress: 30,
+        message: "Measuring front-facing roofline dimensions...",
+      },
+      { progress: 45, message: "Identifying front windows and entryway..." },
+      { progress: 60, message: "Calculating front facade light placement..." },
+      {
+        progress: 75,
+        message: "Analyzing front porch and entrance features...",
+      },
+      {
+        progress: 90,
+        message: "Generating front-facing design recommendations...",
+      },
+      { progress: 100, message: "Front facade analysis complete!" },
     ];
 
     let stepIndex = 0;

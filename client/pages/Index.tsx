@@ -263,14 +263,15 @@ export default function Index() {
       <section id="pricing" className="px-6 lg:px-8 py-20 bg-card/50">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-christmas-red/10 text-christmas-red border-christmas-red/20">
-            Pricing
+            For Business Partners
           </Badge>
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-            Fair, Transparent Pricing
+            Professional Quote Generator
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            No hidden fees, no surprises. Professional installation, premium LED
-            lights, and seasonal storage included.
+            Empower your Christmas lighting business with AI-powered measurement
+            and instant quote generation. Create professional estimates in
+            minutes.
           </p>
         </div>
 

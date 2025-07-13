@@ -193,8 +193,9 @@ export default function Index() {
               </div>
               <CardTitle>Wreaths & Garland</CardTitle>
               <CardDescription>
-                Beautiful wreaths for windows and doors, plus garland
-                installation for porches, railings, and entryways.
+                Include wreaths for windows and doors, plus garland in your
+                quotes for porches, railings, and entryways with automatic
+                pricing.
               </CardDescription>
             </CardHeader>
           </Card>

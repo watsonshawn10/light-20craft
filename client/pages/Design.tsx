@@ -98,6 +98,13 @@ export default function Design() {
         setIsAnalyzing(false);
 
         // Generate realistic analysis results focused on front facade
+        // Determine local pricing based on income level ($7-$10 per foot)
+        const incomeLevel = ["low", "medium", "high"][
+          Math.floor(Math.random() * 3)
+        ];
+        const pricePerFoot =
+          incomeLevel === "low" ? 7 : incomeLevel === "medium" ? 8.5 : 10;
+
         const results = {
           rooflineLength: Math.floor(Math.random() * 100) + 120, // 120-220 ft (front only)
           windows: Math.floor(Math.random() * 5) + 3, // 3-8 front windows
@@ -105,6 +112,8 @@ export default function Design() {
           garageDoors: Math.floor(Math.random() * 3), // 0-2 garage doors
           porchLength: Math.floor(Math.random() * 30) + 10, // 10-40 ft porch
           entryFeatures: Math.floor(Math.random() * 3) + 1, // 1-3 entry features
+          pricePerFoot, // $7-$10 per foot based on local income
+          incomeLevel, // For display purposes
           difficulty: ["Easy", "Moderate", "Complex"][
             Math.floor(Math.random() * 3)
           ],

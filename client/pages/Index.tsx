@@ -319,9 +319,11 @@ export default function Index() {
                   <span className="text-sm">Customer-ready presentations</span>
                 </li>
               </ul>
-              <Button className="w-full mt-6 bg-christmas-green hover:bg-christmas-green/90">
-                Start Free Trial
-              </Button>
+              <Link to="/auth">
+                <Button className="w-full mt-6 bg-christmas-green hover:bg-christmas-green/90">
+                  Start Free Trial
+                </Button>
+              </Link>
             </CardContent>
           </Card>
 

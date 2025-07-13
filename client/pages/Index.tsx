@@ -50,7 +50,9 @@ export default function Index() {
           >
             Pricing
           </a>
-          <Button size="sm">Get Started</Button>
+          <Link to="/auth">
+            <Button size="sm">Get Started</Button>
+          </Link>
         </div>
         <Button size="sm" className="md:hidden">
           Menu

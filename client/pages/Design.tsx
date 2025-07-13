@@ -36,6 +36,9 @@ export default function Design() {
   const [analysisProgress, setAnalysisProgress] = useState(0);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [showMockup, setShowMockup] = useState(false);
+  const [analysisResults, setAnalysisResults] = useState<any>(null);
+  const [selectedDesign, setSelectedDesign] = useState("classic");
+  const [currentStep, setCurrentStep] = useState("upload"); // upload, analyzing, results, quote
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -58,19 +61,54 @@ export default function Design() {
   const startAnalysis = () => {
     setIsAnalyzing(true);
     setAnalysisProgress(0);
+    setCurrentStep("analyzing");
 
-    // Simulate analysis progress
+    // Simulate realistic AI analysis with detailed progress
+    const analysisSteps = [
+      {
+        progress: 15,
+        message: "Detecting rooflines and architectural features...",
+      },
+      { progress: 30, message: "Measuring roofline dimensions..." },
+      { progress: 45, message: "Identifying window and door locations..." },
+      { progress: 60, message: "Calculating optimal light placement zones..." },
+      { progress: 75, message: "Analyzing landscape features..." },
+      { progress: 90, message: "Generating design recommendations..." },
+      { progress: 100, message: "Analysis complete!" },
+    ];
+
+    let stepIndex = 0;
     const interval = setInterval(() => {
-      setAnalysisProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          setIsAnalyzing(false);
-          setShowMockup(true);
-          return 100;
-        }
-        return prev + 10;
-      });
-    }, 200);
+      if (stepIndex < analysisSteps.length) {
+        setAnalysisProgress(analysisSteps[stepIndex].progress);
+        stepIndex++;
+      } else {
+        clearInterval(interval);
+        setIsAnalyzing(false);
+
+        // Generate realistic analysis results
+        const results = {
+          rooflineLength: Math.floor(Math.random() * 200) + 250, // 250-450 ft
+          windows: Math.floor(Math.random() * 8) + 4, // 4-12 windows
+          doors: Math.floor(Math.random() * 3) + 1, // 1-4 doors
+          trees: Math.floor(Math.random() * 5) + 2, // 2-7 trees
+          difficulty: ["Easy", "Moderate", "Complex"][
+            Math.floor(Math.random() * 3)
+          ],
+          estimatedTime: Math.floor(Math.random() * 4) + 3, // 3-7 hours
+          recommendations: [
+            "Warm white LED lights for classic elegance",
+            "Focus on roofline and entryway",
+            "Add wreaths to front-facing windows",
+            "Consider pathway lighting for safety",
+          ],
+        };
+
+        setAnalysisResults(results);
+        setShowMockup(true);
+        setCurrentStep("results");
+      }
+    }, 800);
   };
 
   return (

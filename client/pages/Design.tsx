@@ -351,7 +351,8 @@ export default function Design() {
                     </CardTitle>
                     <CardDescription>
                       We'll use satellite imagery and street view data to
-                      analyze your property and create accurate measurements.
+                      analyze the front facade and create accurate measurements
+                      for Christmas light installation.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-6">

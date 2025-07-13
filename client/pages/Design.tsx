@@ -461,21 +461,48 @@ export default function Design() {
                       </p>
                     </div>
                   </div>
-                  <div className="mt-6">
-                    <h4 className="font-semibold mb-3">AI Recommendations:</h4>
-                    <ul className="space-y-2 text-sm">
-                      {analysisResults.recommendations.map(
-                        (rec: string, index: number) => (
-                          <li
-                            key={index}
-                            className="flex items-start space-x-2"
-                          >
-                            <div className="w-1.5 h-1.5 bg-christmas-green rounded-full mt-2 flex-shrink-0" />
-                            <span className="text-muted-foreground">{rec}</span>
-                          </li>
-                        ),
-                      )}
-                    </ul>
+                  <div className="mt-6 grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 className="font-semibold mb-3">Local Pricing:</h4>
+                      <div className="bg-muted/50 p-3 rounded-lg">
+                        <div className="flex justify-between items-center mb-2">
+                          <span className="text-sm text-muted-foreground">
+                            Base rate per foot:
+                          </span>
+                          <span className="font-semibold text-christmas-green">
+                            ${analysisResults.pricePerFoot}/ft
+                          </span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-sm text-muted-foreground">
+                            Market level:
+                          </span>
+                          <span className="text-xs uppercase font-medium text-christmas-gold">
+                            {analysisResults.incomeLevel} income area
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-3">
+                        AI Recommendations:
+                      </h4>
+                      <ul className="space-y-2 text-sm">
+                        {analysisResults.recommendations
+                          .slice(0, 3)
+                          .map((rec: string, index: number) => (
+                            <li
+                              key={index}
+                              className="flex items-start space-x-2"
+                            >
+                              <div className="w-1.5 h-1.5 bg-christmas-green rounded-full mt-2 flex-shrink-0" />
+                              <span className="text-muted-foreground">
+                                {rec}
+                              </span>
+                            </li>
+                          ))}
+                      </ul>
+                    </div>
                   </div>
                 </CardContent>
               </Card>

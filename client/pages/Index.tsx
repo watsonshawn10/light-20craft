@@ -374,9 +374,11 @@ export default function Index() {
                   </span>
                 </li>
               </ul>
-              <Button className="w-full mt-6 bg-christmas-red hover:bg-christmas-red/90 text-white">
-                Start Professional
-              </Button>
+              <Link to="/auth">
+                <Button className="w-full mt-6 bg-christmas-red hover:bg-christmas-red/90 text-white">
+                  Start Professional
+                </Button>
+              </Link>
             </CardContent>
           </Card>
 

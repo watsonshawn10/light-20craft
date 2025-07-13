@@ -589,9 +589,11 @@ export default function Design() {
                         $
                         {analysisResults
                           ? Math.floor(
-                              analysisResults.rooflineLength * 1.2 + 150,
+                              analysisResults.rooflineLength *
+                                analysisResults.pricePerFoot +
+                                50,
                             )
-                          : 485}
+                          : 840}
                       </span>
                     </div>
                   </div>

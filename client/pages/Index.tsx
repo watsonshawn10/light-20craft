@@ -65,15 +65,15 @@ export default function Index() {
           ✨ Holiday Magic Awaits
         </Badge>
         <h1 className="text-4xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-          Transform Your Home Into a
+          Transform Your Business Into a
           <span className="text-transparent bg-gradient-to-r from-christmas-red to-christmas-gold bg-clip-text block">
-            Winter Wonderland
+            Quote Generation Machine
           </span>
         </h1>
         <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-          Professional Christmas light installation with AI-powered design.
-          Upload a photo of your home or enter your address to see a stunning
-          preview of your holiday transformation.
+          Professional quote generation tool for Christmas lighting contractors.
+          Upload customer photos or addresses to create stunning design mockups
+          and instant professional quotes.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button

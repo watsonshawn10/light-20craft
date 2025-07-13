@@ -1,6 +1,15 @@
 import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
+import {
+  createSubscription,
+  createCustomer,
+  createSetupIntent,
+  getCustomerSubscriptions,
+  cancelSubscription,
+  handleWebhook,
+  getPricingPlans,
+} from "./routes/stripe";
 
 export function createServer() {
   const app = express();

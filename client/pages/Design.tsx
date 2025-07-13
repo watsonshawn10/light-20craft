@@ -610,9 +610,11 @@ export default function Design() {
                     </div>
                     <div>
                       <CardTitle className="text-lg">
-                        Winter Wonderland
+                        Front Facade Premium
                       </CardTitle>
-                      <CardDescription>Full property lighting</CardDescription>
+                      <CardDescription>
+                        Complete front display package
+                      </CardDescription>
                     </div>
                   </div>
                 </CardHeader>

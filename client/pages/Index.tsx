@@ -151,9 +151,9 @@ export default function Index() {
               </div>
               <CardTitle>Address Lookup</CardTitle>
               <CardDescription>
-                Simply enter your address and we'll use satellite imagery and
-                street view data to create accurate measurements and design
-                proposals.
+                Enter any customer address and we'll use satellite imagery and
+                street view data to create accurate measurements and instant
+                quote proposals.
               </CardDescription>
             </CardHeader>
           </Card>

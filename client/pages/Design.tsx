@@ -111,6 +111,32 @@ export default function Design() {
     }, 800);
   };
 
+  const generateQuote = (designType: string) => {
+    setGeneratingQuote(true);
+    setSelectedDesign(designType);
+
+    // Simulate quote generation
+    setTimeout(() => {
+      setGeneratingQuote(false);
+      setQuoteGenerated(true);
+      setCurrentStep("quote");
+
+      // Save to localStorage for demo
+      const quote = {
+        id: Date.now(),
+        designType,
+        analysisResults,
+        address: address || "Photo Upload",
+        date: new Date().toLocaleDateString(),
+        status: "Generated",
+      };
+
+      const existingQuotes = JSON.parse(localStorage.getItem("quotes") || "[]");
+      existingQuotes.push(quote);
+      localStorage.setItem("quotes", JSON.stringify(existingQuotes));
+    }, 2000);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-christmas-snow to-secondary">
       {/* Navigation */}

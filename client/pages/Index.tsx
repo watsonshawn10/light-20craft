@@ -324,7 +324,7 @@ export default function Index() {
                   <span className="text-sm">Customer-ready presentations</span>
                 </li>
               </ul>
-              <Link to="/auth">
+              <Link to="/subscription?plan=basic">
                 <Button className="w-full mt-6 bg-christmas-green hover:bg-christmas-green/90">
                   Start Free Trial
                 </Button>

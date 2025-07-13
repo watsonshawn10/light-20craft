@@ -364,6 +364,73 @@ export default function Design() {
               </p>
             </div>
 
+            {/* Analysis Results */}
+            {analysisResults && (
+              <Card className="mb-8 bg-gradient-to-r from-christmas-green/5 to-christmas-red/5">
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Zap className="h-5 w-5 text-christmas-gold" />
+                    <span>AI Analysis Results</span>
+                  </CardTitle>
+                  <CardDescription>
+                    Here's what our AI detected about your property
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-4 gap-6">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-christmas-green">
+                        {analysisResults.rooflineLength}ft
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Roofline Length
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-christmas-red">
+                        {analysisResults.windows}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Windows Detected
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-christmas-gold">
+                        {analysisResults.trees}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Trees/Bushes
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-christmas-green">
+                        {analysisResults.estimatedTime}hrs
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Install Time
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-6">
+                    <h4 className="font-semibold mb-3">AI Recommendations:</h4>
+                    <ul className="space-y-2 text-sm">
+                      {analysisResults.recommendations.map(
+                        (rec: string, index: number) => (
+                          <li
+                            key={index}
+                            className="flex items-start space-x-2"
+                          >
+                            <div className="w-1.5 h-1.5 bg-christmas-green rounded-full mt-2 flex-shrink-0" />
+                            <span className="text-muted-foreground">{rec}</span>
+                          </li>
+                        ),
+                      )}
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
             <div className="grid lg:grid-cols-2 gap-8 mb-8">
               {/* Original Image */}
               <Card>
@@ -452,12 +519,29 @@ export default function Design() {
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span>Roofline lights:</span>
-                      <span className="font-medium">350 ft</span>
+                      <span className="font-medium">
+                        {analysisResults?.rooflineLength || 350} ft
+                      </span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Estimated cost:</span>
-                      <span className="font-medium text-christmas-green">
-                        $485
+                      <span>Materials:</span>
+                      <span className="font-medium">LED warm white</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Install time:</span>
+                      <span className="font-medium">
+                        {analysisResults?.estimatedTime || 4} hours
+                      </span>
+                    </div>
+                    <div className="flex justify-between border-t pt-2 mt-2">
+                      <span className="font-semibold">Total cost:</span>
+                      <span className="font-bold text-christmas-green">
+                        $
+                        {analysisResults
+                          ? Math.floor(
+                              analysisResults.rooflineLength * 1.2 + 150,
+                            )
+                          : 485}
                       </span>
                     </div>
                   </div>
@@ -481,13 +565,39 @@ export default function Design() {
                 <CardContent>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span>Full package:</span>
-                      <span className="font-medium">House + trees</span>
+                      <span>
+                        Roofline + {analysisResults?.trees || 3} trees:
+                      </span>
+                      <span className="font-medium">
+                        {analysisResults?.rooflineLength || 350} ft + trees
+                      </span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Estimated cost:</span>
-                      <span className="font-medium text-christmas-green">
-                        $785
+                      <span>Wreaths:</span>
+                      <span className="font-medium">
+                        {analysisResults?.windows || 6} included
+                      </span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Install time:</span>
+                      <span className="font-medium">
+                        {analysisResults
+                          ? analysisResults.estimatedTime + 2
+                          : 6}{" "}
+                        hours
+                      </span>
+                    </div>
+                    <div className="flex justify-between border-t pt-2 mt-2">
+                      <span className="font-semibold">Total cost:</span>
+                      <span className="font-bold text-christmas-green">
+                        $
+                        {analysisResults
+                          ? Math.floor(
+                              analysisResults.rooflineLength * 1.5 +
+                                analysisResults.trees * 85 +
+                                200,
+                            )
+                          : 785}
                       </span>
                     </div>
                   </div>

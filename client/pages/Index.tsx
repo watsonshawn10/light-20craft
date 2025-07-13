@@ -207,8 +207,8 @@ export default function Index() {
               </div>
               <CardTitle>Landscape Lighting</CardTitle>
               <CardDescription>
-                Transform your yard with lights on trees, bushes, and walkways.
-                Create a magical outdoor winter wonderland.
+                Quote tree lighting, bushes, and walkway installations. Help
+                customers envision their magical outdoor winter wonderland.
               </CardDescription>
             </CardHeader>
           </Card>

@@ -177,10 +177,11 @@ export default function Index() {
               <div className="w-12 h-12 bg-christmas-red/10 rounded-lg flex items-center justify-center mb-4">
                 <Home className="h-6 w-6 text-christmas-red" />
               </div>
-              <CardTitle>Roofline Lights</CardTitle>
+              <CardTitle>Roofline Quotes</CardTitle>
               <CardDescription>
-                Professional installation of LED lights along gutters,
-                rooflines, and architectural details for stunning curb appeal.
+                Generate accurate quotes for LED light installation along
+                gutters, rooflines, and architectural details with automatic
+                material calculations.
               </CardDescription>
             </CardHeader>
           </Card>

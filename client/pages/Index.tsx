@@ -276,19 +276,19 @@ export default function Index() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {/* Starter Package */}
+          {/* Basic Plan */}
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative">
             <CardHeader>
-              <CardTitle className="text-xl mb-2">Roofline Classic</CardTitle>
+              <CardTitle className="text-xl mb-2">Basic Business</CardTitle>
               <div className="text-3xl font-bold text-christmas-green mb-2">
-                $485
+                $49
                 <span className="text-base font-normal text-muted-foreground ml-1">
-                  starting
+                  /month
                 </span>
               </div>
               <CardDescription>
-                Perfect for a clean, elegant holiday look with warm white LED
-                roofline lighting.
+                Perfect for small Christmas lighting businesses getting started
+                with professional quotes.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -296,141 +296,131 @@ export default function Index() {
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
                   <span className="text-sm">
-                    Up to 400ft of roofline lights
+                    50 quote generations per month
                   </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">Premium LED warm white lights</span>
+                  <span className="text-sm">AI roofline measurement</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">Professional installation</span>
+                  <span className="text-sm">3D design mockups</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">New Year take-down service</span>
+                  <span className="text-sm">Professional quote templates</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">Free storage until next year</span>
+                  <span className="text-sm">Customer-ready presentations</span>
                 </li>
               </ul>
               <Button className="w-full mt-6 bg-christmas-green hover:bg-christmas-green/90">
-                Get Started
+                Start Free Trial
               </Button>
             </CardContent>
           </Card>
 
-          {/* Popular Package */}
+          {/* Professional Plan */}
           <Card className="border-christmas-red/30 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative">
             <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-christmas-red text-white">
               Most Popular
             </Badge>
             <CardHeader>
-              <CardTitle className="text-xl mb-2">Winter Wonderland</CardTitle>
+              <CardTitle className="text-xl mb-2">Professional</CardTitle>
               <div className="text-3xl font-bold text-christmas-red mb-2">
-                $785
+                $129
                 <span className="text-base font-normal text-muted-foreground ml-1">
-                  starting
+                  /month
                 </span>
               </div>
               <CardDescription>
-                Complete property transformation with house, trees, and
-                landscape lighting.
+                Complete solution for established Christmas lighting contractors
+                and installers.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">
-                    Everything in Roofline Classic
-                  </span>
+                  <span className="text-sm">Unlimited quote generations</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-christmas-green" />
+                  <span className="text-sm">Advanced AI property analysis</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-christmas-green" />
+                  <span className="text-sm">Custom pricing & markup tools</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-christmas-green" />
+                  <span className="text-sm">CRM integration</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-christmas-green" />
+                  <span className="text-sm">White-label presentations</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
                   <span className="text-sm">
-                    Up to 3 trees with net lighting
+                    Automated material calculations
                   </span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">
-                    Garland & wreaths (4 included)
-                  </span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">
-                    Pathway & landscape accent lights
-                  </span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">Bushes & shrub wrapping</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">Color options available</span>
                 </li>
               </ul>
               <Button className="w-full mt-6 bg-christmas-red hover:bg-christmas-red/90 text-white">
-                Most Popular Choice
+                Start Professional
               </Button>
             </CardContent>
           </Card>
 
-          {/* Premium Package */}
+          {/* Enterprise Plan */}
           <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative">
             <CardHeader>
-              <CardTitle className="text-xl mb-2">Custom Design</CardTitle>
+              <CardTitle className="text-xl mb-2">Enterprise</CardTitle>
               <div className="text-3xl font-bold text-christmas-gold mb-2">
-                $1,200+
+                Custom
                 <span className="text-base font-normal text-muted-foreground ml-1">
-                  custom
+                  pricing
                 </span>
               </div>
               <CardDescription>
-                Fully customized design with premium features and unlimited
-                creativity.
+                Tailored solution for large Christmas lighting companies and
+                franchises.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">
-                    Everything in Winter Wonderland
-                  </span>
+                  <span className="text-sm">Everything in Professional</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-christmas-green" />
+                  <span className="text-sm">Multi-location management</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-christmas-green" />
+                  <span className="text-sm">Team collaboration tools</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
                   <span className="text-sm">
-                    Custom color schemes & patterns
+                    Advanced analytics & reporting
                   </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">
-                    Premium animated lighting effects
-                  </span>
+                  <span className="text-sm">API access & integrations</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">Large property coverage</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">Smart home integration</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-christmas-green" />
-                  <span className="text-sm">Dedicated design consultation</span>
+                  <span className="text-sm">Dedicated account manager</span>
                 </li>
               </ul>
               <Button className="w-full mt-6 bg-christmas-gold hover:bg-christmas-gold/90 text-christmas-gold-foreground">
-                Schedule Consultation
+                Contact Sales
               </Button>
             </CardContent>
           </Card>

@@ -551,24 +551,63 @@ export default function Design() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-gradient-to-br from-blue-900 to-purple-900 rounded-lg flex items-center justify-center relative overflow-hidden">
-                    {/* Simulated Christmas lights effect */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-christmas-red/20 to-christmas-green/20 rounded-lg"></div>
-                    <div className="text-center text-white relative z-10">
-                      <Sparkles className="h-16 w-16 mx-auto mb-4 animate-pulse" />
-                      <p className="text-lg font-semibold">
-                        Magical Transformation
-                      </p>
-                      <p className="text-sm opacity-80">
-                        Roofline lights • Window wreaths • Tree lighting
-                      </p>
-                    </div>
-                    {/* Animated light dots */}
-                    <div className="absolute top-4 left-4 w-2 h-2 bg-christmas-red rounded-full animate-pulse"></div>
-                    <div className="absolute top-6 left-12 w-2 h-2 bg-christmas-gold rounded-full animate-pulse delay-100"></div>
-                    <div className="absolute top-4 left-20 w-2 h-2 bg-christmas-green rounded-full animate-pulse delay-200"></div>
-                    <div className="absolute bottom-8 right-8 w-2 h-2 bg-christmas-red rounded-full animate-pulse delay-300"></div>
-                    <div className="absolute bottom-12 right-16 w-2 h-2 bg-christmas-gold rounded-full animate-pulse delay-400"></div>
+                  <div className="aspect-video rounded-lg relative overflow-hidden">
+                    {uploadedImage ? (
+                      <div className="relative w-full h-full">
+                        {/* Base uploaded image */}
+                        <img
+                          src={uploadedImage}
+                          alt="House with Christmas lights"
+                          className="w-full h-full object-cover rounded-lg"
+                        />
+
+                        {/* Christmas lights overlay effects */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-christmas-red/10 to-christmas-green/10 rounded-lg"></div>
+
+                        {/* Simulated roofline lights */}
+                        <div className="absolute top-[20%] left-[10%] right-[10%] h-0.5 bg-christmas-gold shadow-lg shadow-christmas-gold/50 rounded-full"></div>
+                        <div className="absolute top-[20%] left-[15%] right-[15%] h-0.5 bg-white/80 shadow-lg shadow-white/50 rounded-full"></div>
+
+                        {/* Window light effects */}
+                        <div className="absolute top-[35%] left-[20%] w-3 h-4 bg-christmas-gold/60 rounded-sm shadow-lg shadow-christmas-gold/30"></div>
+                        <div className="absolute top-[35%] left-[40%] w-3 h-4 bg-christmas-gold/60 rounded-sm shadow-lg shadow-christmas-gold/30"></div>
+                        <div className="absolute top-[35%] right-[30%] w-3 h-4 bg-christmas-gold/60 rounded-sm shadow-lg shadow-christmas-gold/30"></div>
+
+                        {/* Animated Christmas light dots */}
+                        <div className="absolute top-[22%] left-[12%] w-1.5 h-1.5 bg-christmas-red rounded-full animate-pulse shadow-lg shadow-christmas-red/50"></div>
+                        <div className="absolute top-[22%] left-[20%] w-1.5 h-1.5 bg-christmas-green rounded-full animate-pulse delay-100 shadow-lg shadow-christmas-green/50"></div>
+                        <div className="absolute top-[22%] left-[28%] w-1.5 h-1.5 bg-christmas-gold rounded-full animate-pulse delay-200 shadow-lg shadow-christmas-gold/50"></div>
+                        <div className="absolute top-[22%] left-[36%] w-1.5 h-1.5 bg-christmas-red rounded-full animate-pulse delay-300 shadow-lg shadow-christmas-red/50"></div>
+                        <div className="absolute top-[22%] left-[44%] w-1.5 h-1.5 bg-christmas-green rounded-full animate-pulse delay-400 shadow-lg shadow-christmas-green/50"></div>
+                        <div className="absolute top-[22%] right-[40%] w-1.5 h-1.5 bg-christmas-gold rounded-full animate-pulse delay-500 shadow-lg shadow-christmas-gold/50"></div>
+                        <div className="absolute top-[22%] right-[32%] w-1.5 h-1.5 bg-christmas-red rounded-full animate-pulse delay-600 shadow-lg shadow-christmas-red/50"></div>
+                        <div className="absolute top-[22%] right-[24%] w-1.5 h-1.5 bg-christmas-green rounded-full animate-pulse delay-700 shadow-lg shadow-christmas-green/50"></div>
+                        <div className="absolute top-[22%] right-[16%] w-1.5 h-1.5 bg-christmas-gold rounded-full animate-pulse delay-800 shadow-lg shadow-christmas-gold/50"></div>
+                        <div className="absolute top-[22%] right-[12%] w-1.5 h-1.5 bg-christmas-red rounded-full animate-pulse delay-900 shadow-lg shadow-christmas-red/50"></div>
+
+                        {/* Door wreath */}
+                        <div className="absolute bottom-[30%] left-[47%] w-6 h-6 border-2 border-christmas-green rounded-full bg-christmas-green/20 shadow-lg shadow-christmas-green/30"></div>
+
+                        {/* Sparkle effect overlay */}
+                        <div className="absolute top-2 right-2">
+                          <Sparkles className="h-6 w-6 text-christmas-gold animate-pulse" />
+                        </div>
+
+                        {/* Enhancement label */}
+                        <div className="absolute bottom-2 right-2 bg-black/50 text-white px-2 py-1 rounded text-xs">
+                          AI Enhanced
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="aspect-video bg-gradient-to-br from-blue-900 to-purple-900 rounded-lg flex items-center justify-center">
+                        <div className="text-center text-white">
+                          <Sparkles className="h-16 w-16 mx-auto mb-4 animate-pulse" />
+                          <p className="text-lg font-semibold">
+                            Upload a photo to see the magic!
+                          </p>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </CardContent>
               </Card>

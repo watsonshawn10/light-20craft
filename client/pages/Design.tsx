@@ -512,8 +512,8 @@ export default function Design() {
               {/* Original Image */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Original</CardTitle>
-                  <CardDescription>Your home as it is now</CardDescription>
+                  <CardTitle>Original Property</CardTitle>
+                  <CardDescription>Your uploaded photo</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">

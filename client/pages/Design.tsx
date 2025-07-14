@@ -60,10 +60,19 @@ export default function Design() {
 
   const handleAddressSubmit = () => {
     if (address.trim()) {
-      // Simulate getting property image from address lookup
-      setUploadedImage(
-        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop&q=80",
-      );
+      // Simulate getting property image from address lookup (satellite/street view)
+      const propertyImages = [
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop&q=80", // Modern house
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop&q=80", // Traditional house
+        "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&h=600&fit=crop&q=80", // Colonial house
+        "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=800&h=600&fit=crop&q=80", // Ranch house
+        "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=800&h=600&fit=crop&q=80", // Two-story house
+      ];
+
+      const randomImage =
+        propertyImages[Math.floor(Math.random() * propertyImages.length)];
+      setUploadedImage(randomImage);
+      setImageSource("address");
       startAnalysis();
     }
   };

@@ -530,7 +530,13 @@ export default function Design() {
               <Card>
                 <CardHeader>
                   <CardTitle>Original Property</CardTitle>
-                  <CardDescription>Your uploaded photo</CardDescription>
+                  <CardDescription>
+                    {imageSource === "upload"
+                      ? "Your uploaded photo"
+                      : imageSource === "address"
+                        ? `Property view for ${address || "entered address"}`
+                        : "Property view"}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">

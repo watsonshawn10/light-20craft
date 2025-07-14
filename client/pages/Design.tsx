@@ -51,6 +51,7 @@ export default function Design() {
       const reader = new FileReader();
       reader.onload = (e) => {
         setUploadedImage(e.target?.result as string);
+        setImageSource("upload");
         startAnalysis();
       };
       reader.readAsDataURL(file);

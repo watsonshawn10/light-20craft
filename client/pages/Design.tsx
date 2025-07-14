@@ -539,13 +539,27 @@ export default function Design() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
+                  <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center relative">
                     {uploadedImage ? (
-                      <img
-                        src={uploadedImage}
-                        alt="Original house"
-                        className="w-full h-full object-cover rounded-lg"
-                      />
+                      <div className="relative w-full h-full">
+                        <img
+                          src={uploadedImage}
+                          alt="Original house"
+                          className="w-full h-full object-cover rounded-lg"
+                        />
+                        {imageSource === "address" && (
+                          <div className="absolute bottom-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs flex items-center space-x-1">
+                            <MapPin className="h-3 w-3" />
+                            <span>Satellite View</span>
+                          </div>
+                        )}
+                        {imageSource === "upload" && (
+                          <div className="absolute bottom-2 left-2 bg-green-600 text-white px-2 py-1 rounded text-xs flex items-center space-x-1">
+                            <Camera className="h-3 w-3" />
+                            <span>Your Photo</span>
+                          </div>
+                        )}
+                      </div>
                     ) : (
                       <div className="text-center">
                         <Home className="h-12 w-12 text-gray-400 mx-auto mb-2" />

@@ -56,6 +56,10 @@ export default function Design() {
 
   const handleAddressSubmit = () => {
     if (address.trim()) {
+      // Simulate getting property image from address lookup
+      setUploadedImage(
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop&q=80",
+      );
       startAnalysis();
     }
   };

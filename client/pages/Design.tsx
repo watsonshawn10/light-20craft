@@ -41,6 +41,9 @@ export default function Design() {
   const [currentStep, setCurrentStep] = useState("upload"); // upload, analyzing, results, quote
   const [generatingQuote, setGeneratingQuote] = useState(false);
   const [quoteGenerated, setQuoteGenerated] = useState(false);
+  const [imageSource, setImageSource] = useState<"upload" | "address" | null>(
+    null,
+  );
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];

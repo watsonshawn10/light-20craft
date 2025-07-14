@@ -542,7 +542,7 @@ export default function Design() {
                         With Christmas Lights
                       </CardTitle>
                       <CardDescription>
-                        Professional holiday transformation
+                        AI-enhanced preview with holiday lighting
                       </CardDescription>
                     </div>
                     <Badge className="bg-christmas-red text-white">
